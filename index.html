@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/main.js"></script>
+    <title>Tim Horton</title>
+</head>
+<body>
+    <div class="container">
+        <img src="img/buffalolatte.jpg">
+        <h1>Welcome to Tim Horton's</h1>
+        <form class="box" action="./action.php" method="post">
+            <h3>Give us some numbers...</h5>
+            <label>Number of Coffee</label>
+            <input type="number" min="1" name="coffeeNum" value="1"><br>
+            <label>Size</label>
+            <select name="size" id="size">
+                <option value="small" id="small">Small</option>
+                <option value="medium" id="medium">Medium</option>
+                <option value="large" id="large">Large</option>
+                <option value="extraLarge" id="extraLarge">Extra Large</option>
+            </select><br>
+            <label>How many creams?</label>
+            <input type="number" min="0" name="creamNum" value="0"><br>
+            <label>How many sugars?</label>
+            <input type="number" min="0" name="sugarNum" value="0"><br>
+            <input id="submit" type="submit" value="Order Coffee">
+
+        </form>
+        <form class="box" action="./action.php" method="post">
+            <input type="number" name="coffeeNum" min="1" value="1">
+            <select name="size" id="size">
+                <option value="small" id="small">Small</option>
+                <option value="medium" id="medium">Medium</option>
+                <option value="large" id="large">Large</option>
+                <option value="extraLarge" id="extraLarge">Extra Large</option>
+            </select><br>
+            <input class="radio" type="radio" name="orderType" value="regular">
+            <label class="lab1">Regular</label><br>
+            <input class="radio" type="radio" name="orderType" value="dd">
+            <label class="lab1">Double Double</label><br>
+            <input class="radio" type="radio" name="orderType" value="tt" >
+            <label class="lab1">Triple Triple</label><br>
+            <input class="radio" type="radio" name="orderType" value="bl">
+            <label class="lab1">Black</label><br>
+            <input class="radio" type="radio" name="orderType" value="bs">
+            <label class="lab1">Black One Sugar</label><br>
+            <input class="radio" type="radio" name="orderType" value="bss">
+            <label class="lab1">Black Two Sugars</label><br>
+            <input class="radio" type="radio" name="orderType" value="bsss">
+            <label class="lab1">Black Three Sugars</label><br>
+            <input id="submit" type="submit" value="Order Coffee">
+        </form>
+
+    </div>
+    
+</body>
+</html>
